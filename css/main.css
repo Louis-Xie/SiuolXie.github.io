@@ -101,7 +101,8 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  color: #EB5744;
+  /*color: #EB5744;*/
+  color: #337ab7;
 }
 
 input {
@@ -146,7 +147,8 @@ input::placeholder {
 
 
 button, .btn:link, .btn:visited {
-  background: #EB5744;
+  /*background: #EB5744;*/
+  background: #337ab7;
   border: none;
   border-radius: 1px;
   cursor: pointer;
@@ -161,12 +163,20 @@ button, .btn:link, .btn:visited {
   vertical-align: middle;
 }
 
+/*button:hover, a.btn:hover {
+  color: #FFF;
+}*/
+
 button:hover, a.btn:hover {
   color: #FFF;
+  /* Add background */
+  background: #215889;
 }
 
 button:active, .btn:active {
-  background: rgb(233, 65, 43);
+  /*background: rgb(233, 65, 43);*/
+  /* Change background */
+  background: #12436E;
   border: none;
 }
 
@@ -235,7 +245,8 @@ nav li.latest-article a, nav li.latest-article span {
 }
 
 nav li.latest-article a:link, nav li.latest-article a:visited {
-  color: #EB5744;
+  /*color: #EB5744;*/
+  color: #337ab7;
 }
 
 nav a:link, nav a:visited {
@@ -250,7 +261,9 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover {
-  color: #EB5744;
+  /*color: #EB5744;*/
+  color: #337ab7;
+  background: #333;
 }
 
 nav .logo {
