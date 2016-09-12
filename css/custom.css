@@ -1,0 +1,327 @@
+html, body, ul, ol, dl, li, dt, dd, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip {
+  z-index: 99;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a { outline: none; }
+
+.xsmall {
+  font-size: 11px;
+}
+
+.lowlight {
+  color: #666;
+}
+
+.center {
+  text-align: center;
+}
+
+.notification {
+  padding: 1em 0;
+}
+
+.notification-error {
+  color: #E8C66F;
+}
+
+html, body {
+  background-color: #EBEBEB;
+  background-image: url('/city_skyline_white.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Titillium Web",sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 730px) {
+  body {
+    -webkit-background-size: 200% auto;
+            background-size: 200% auto;
+    background-attachment: none;
+  }
+}
+
+p {
+  font-size: 14px;
+}
+
+p, button, a.btn {
+  text-shadow: none;
+}
+
+#layout {
+  color: #1a1a1a;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+}
+
+#layout main {
+  padding-bottom: 124px;
+}
+
+#layout .container {
+  margin: 0 auto;
+  width: 720px;
+}
+
+.sticky-footer {
+  min-height: 100%;
+  position: relative;
+}
+
+a {
+  -webkit-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+a:link, a:visited {
+  color: #1a1a1a;
+}
+
+a:hover, a:active {
+  color: #EB5744;
+}
+
+input {
+  display: inline-block;
+  background: #fafafa;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+  padding: 8px 9px;
+  color: #1a1a1a;
+}
+
+input:focus {
+  border-color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #CCC;
+  font-weight: 300;
+  opacity: 1;
+}
+
+input::-moz-placeholder {
+  color: #CCC;
+  font-weight: 300;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #CCC;
+  font-weight: 300;
+  opacity: 1;
+}
+
+input::placeholder {
+  color: #CCC;
+  font-weight: 300;
+  opacity: 1;
+}
+
+
+button, .btn:link, .btn:visited {
+  background: #EB5744;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  color: #FFF;
+  display: inline-block;
+  font-family: "Titillium Web",sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  outline: none;
+  padding: 8px 12px 7px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+button:hover, a.btn:hover {
+  color: #FFF;
+}
+
+button:active, .btn:active {
+  background: rgb(233, 65, 43);
+  border: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: inherit;
+  fill: currentColor;
+}
+
+/*$font-color-bright: #AAC5DB;*/
+
+nav {
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  margin-bottom: 52px;
+  height: 72px;
+  width: 100%;
+  z-index: 21;
+}
+
+nav ul.left {
+  margin-left: 20px;
+  float: left;
+}
+
+nav ul.left li:first-child {
+  margin-left: 0;
+}
+
+nav ul.right {
+  margin-right: 20px;
+  float: right;
+}
+
+nav ul.right li.sign-in, nav ul.right li.sign-out {
+  margin-right: 0;
+}
+
+nav li {
+  display: inline-block;
+  height: 72px;
+  line-height: 72px;
+  margin: 0 10px;
+}
+
+nav li.latest-article {
+  display: block;
+  font-size: 13px;
+  position: absolute;
+  height: 21px;
+  line-height: 21px;
+  margin: 0 auto;
+  top: 82px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 720px;
+}
+
+nav li.latest-article a, nav li.latest-article span {
+  height: 21px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+nav li.latest-article a:link, nav li.latest-article a:visited {
+  color: #EB5744;
+}
+
+nav a:link, nav a:visited {
+  display: inline-block;
+  height: 72px;
+  line-height: 72px;
+  color: #CCC;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: #EB5744;
+}
+
+nav .logo {
+  display: inline-block;
+  background: url('/signature.png') center no-repeat;
+  -webkit-background-size: 193px 48px;
+          background-size: 193px 48px;
+  width: 193px;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.AuthDialog {
+  min-height: 256px;
+  text-align: center;
+}
+.AuthDialog input {
+  display: block;
+  margin: 10px auto;
+  width: 217px;
+}
+.AuthDialog button {
+  margin: 0 auto;
+}
+.AuthDialog p {
+  margin: 1em auto;
+}
+.AuthDialog h1 {
+  margin-bottom: 1em;
+}
+
+/*$font-color-bright: #AAC5DB;*/
+
+footer {
+  font-size: .75em;
+  margin-top: -124px;
+  padding-top: 24px;
+  height: 76px;
+}
+
+footer .sigil {
+  background-image: url('/mark.png');
+  -webkit-background-size: 47px 53px;
+          background-size: 47px 53px;
+  display: block;
+  width: 47px;
+  height: 53px;
+  margin: 0 auto 10px;
+}
+
+footer ul {
+  margin: 0 0 10px;
+}
+
+footer li {
+  display: inline-block;
+  line-height: 1em;
+  border-right: 1px solid #555;
+  padding: 0 .5em
+}
+
+footer li:last-child {
+  border-right: none;
+}
+
+footer .hash {
+  color: #666;
+}
+
+footer button {
+  background: #999;
+}
